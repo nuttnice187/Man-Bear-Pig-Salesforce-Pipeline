@@ -2,6 +2,10 @@
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <StartupScript>(Blank)</StartupScript>
-    <StartAction>StartNone</StartAction>
+    <StartAction>StartExternalProgram</StartAction>
+    <CreateNewDatabase>True</CreateNewDatabase>
+    <BlockOnPossibleDataLoss>True</BlockOnPossibleDataLoss>
+    <TargetConnectionString>Data Source=DESKTOP-TD602CR\JABBOSA;Initial Catalog=master;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=True</TargetConnectionString>
+    <TargetDatabase>master</TargetDatabase>
   </PropertyGroup>
 </Project>

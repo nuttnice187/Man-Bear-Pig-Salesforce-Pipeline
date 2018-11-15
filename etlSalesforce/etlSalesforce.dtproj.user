@@ -4,8 +4,8 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
-        <ServerName>DESKTOP-TD602CR\JABBOSA</ServerName>
-        <PathOnServer />
+        <ServerName>DESKTOP-TD602CR\JABBOetl</ServerName>
+        <PathOnServer>/SSISDB/Salesforce/etlSalesforce</PathOnServer>
         <UserIDs />
         <UserPasswords />
         <OfflineMode>false</OfflineMode>
