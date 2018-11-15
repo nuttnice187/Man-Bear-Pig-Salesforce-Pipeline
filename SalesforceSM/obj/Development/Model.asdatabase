@@ -1,0 +1,91 @@
+{
+  "name": "SFAnalytics",
+  "compatibilityLevel": 1200,
+  "model": {
+    "culture": "en-US",
+    "dataSources": [
+      {
+        "name": "SqlServer",
+        "connectionString": "Provider=SQLNCLI11;Data Source=DESKTOP-TD602CR\\JABBOSA;Integrated Security=SSPI;Persist Security Info=false;Initial Catalog=SFDC",
+        "impersonationMode": "impersonateAccount",
+        "account": "phill",
+        "annotations": [
+          {
+            "name": "ConnectionEditUISource",
+            "value": "SqlServer"
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "name": "Leads",
+        "columns": [
+          {
+            "name": "LeadSource",
+            "dataType": "string",
+            "sourceColumn": "LeadSource",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "IsDeleted",
+            "dataType": "boolean",
+            "sourceColumn": "IsDeleted",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "Boolean"
+          },
+          {
+            "name": "CreatedDate",
+            "dataType": "dateTime",
+            "sourceColumn": "CreatedDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "ConvertedDate",
+            "dataType": "dateTime",
+            "sourceColumn": "ConvertedDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBDate"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "vw_Leads",
+            "dataView": "full",
+            "source": {
+              "query": " SELECT [ssas].[vw_Leads].* FROM [ssas].[vw_Leads] ",
+              "dataSource": "SqlServer"
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "LeadCt",
+            "expression": " CALCULATE( COUNTROWS('Leads'), Leads[IsDeleted] = FALSE )"
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [ssas].[vw_Leads].* FROM [ssas].[vw_Leads] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "vw_Leads"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "ssas"
+          }
+        ]
+      }
+    ],
+    "annotations": [
+      {
+        "name": "ClientCompatibilityLevel",
+        "value": "400"
+      }
+    ]
+  }
+}
