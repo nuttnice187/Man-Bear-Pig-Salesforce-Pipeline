@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "etlSalesforce", "etlJabbo\etlSalesforce.dtproj", "{282A08BA-F0CB-4990-810D-D757F5B31EDC}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SFDCDatabase", "..\SFDC\SFDCDatabase\SFDCDatabase.sqlproj", "{9C5A81B7-6357-4F35-AEC3-A788B5096A13}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SFDCDatabase", "SFDCDatabase\SFDCDatabase.sqlproj", "{9C5A81B7-6357-4F35-AEC3-A788B5096A13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
