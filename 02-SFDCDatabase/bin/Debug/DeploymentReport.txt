@@ -1,0 +1,25 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Alter
+       [sfo] (Schema)
+     Create
+       [sfo].[sfoProduct2] (Table)
+
+** Supporting actions
+
+If this deployment is executed, changes to [sfo] might introduce run-time errors in [sfo].[Produc2].
+If this deployment is executed, changes to [sfo] might introduce run-time errors in [sfo].[Lead].
+If this deployment is executed, changes to [sfo] might introduce run-time errors in [sfo].[Opportunity].
+If this deployment is executed, changes to [sfo] might introduce run-time errors in [sfo].[Contact].
+If this deployment is executed, changes to [sfo] might introduce run-time errors in [sfo].[Case].
+If this deployment is executed, changes to [sfo] might introduce run-time errors in [sfo].[Product2].
+

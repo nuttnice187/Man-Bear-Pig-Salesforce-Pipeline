@@ -1,5 +1,0 @@
-C:\Users\phill\Source\Repos\ManBearPigSalesforcePipeline\SFDCDatabase\bin\Debug\SFDCDatabase.dacpac
-C:\Users\phill\Source\Repos\ManBearPigSalesforcePipeline\SFDCDatabase\obj\Debug\SFDCDatabase.dll
-C:\Users\phill\Source\Repos\ManBearPigSalesforcePipeline\SFDCDatabase\obj\Debug\SFDCDatabase.pdb
-C:\Users\phill\Source\Repos\ManBearPigSalesforcePipeline\SFDCDatabase\bin\Debug\SFDCDatabase.dll
-C:\Users\phill\Source\Repos\ManBearPigSalesforcePipeline\SFDCDatabase\bin\Debug\SFDCDatabase.pdb

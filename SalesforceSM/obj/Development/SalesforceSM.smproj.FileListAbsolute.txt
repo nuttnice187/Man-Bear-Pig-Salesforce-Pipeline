@@ -1,7 +1,0 @@
-C:\Users\phill\Source\Repos\ManBearPigSalesforcePipeline\SalesforceSM\bin\Model.asdatabase
-C:\Users\phill\Source\Repos\ManBearPigSalesforcePipeline\SalesforceSM\bin\Model.deploymenttargets
-C:\Users\phill\Source\Repos\ManBearPigSalesforcePipeline\SalesforceSM\bin\Model.deploymentoptions
-C:\Users\phill\Source\Repos\ManBearPigSalesforcePipeline\SalesforceSM\obj\Development\SalesforceSM.smproj.CoreCompileInputs.cache
-C:\Users\phill\Source\Repos\ManBearPigSalesforcePipeline\SalesforceSM\obj\Development\Model.asdatabase
-C:\Users\phill\Source\Repos\ManBearPigSalesforcePipeline\SalesforceSM\obj\Development\Model.deploymentoptions
-C:\Users\phill\Source\Repos\ManBearPigSalesforcePipeline\SalesforceSM\obj\Development\Model.deploymenttargets

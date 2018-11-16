@@ -1,4 +1,4 @@
-# Man Bear Pig Salesforce Pipeline
+# Widget Factory Salesforce Pipeline
 Sample end-to-end Salesforce reporting analytics with MSBI: document end to end salesforce analytics methodology for documentation purposes of best practices and continual improvement
 
 ## Define Potential Business' Reporting Needs
@@ -20,7 +20,7 @@ Sample end-to-end Salesforce reporting analytics with MSBI: document end to end 
     - [ ] CREATE Views for Analysis Services tables
             - [ ] Model Facts: business process entities and the attributes required for measuring them
             - [ ] Model Dimensions: business participants, calendar entities and higher attributes of such
-    - [ ] Model Facts and Demensions in Tabular BISM by refining relationships
+    - [ ] Model Facts and Dimensions in Tabular BISM by refining relationships
     - [ ] Develop Data Measurement Expressions
     - [ ] Develop Hierarchies
 ## Apply Model to Visualization tool
