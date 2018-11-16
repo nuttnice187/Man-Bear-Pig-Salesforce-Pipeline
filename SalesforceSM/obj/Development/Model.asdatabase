@@ -19,7 +19,7 @@
     ],
     "tables": [
       {
-        "name": "Leads",
+        "name": "Lead",
         "columns": [
           {
             "name": "LeadSource",
@@ -62,7 +62,7 @@
         "measures": [
           {
             "name": "LeadCt",
-            "expression": " CALCULATE( COUNTROWS('Leads'), Leads[IsDeleted] = FALSE )"
+            "expression": " CALCULATE( COUNTROWS('Lead'), 'Lead'[IsDeleted] = FALSE )"
           }
         ],
         "annotations": [
@@ -73,6 +73,93 @@
           {
             "name": "_TM_ExtProp_DbTableName",
             "value": "vw_Leads"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "ssas"
+          }
+        ]
+      },
+      {
+        "name": "Opportunity",
+        "columns": [
+          {
+            "name": "IsDeleted",
+            "dataType": "boolean",
+            "sourceColumn": "IsDeleted",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "Boolean"
+          },
+          {
+            "name": "StageName",
+            "dataType": "string",
+            "sourceColumn": "StageName",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "CreatedDate",
+            "dataType": "dateTime",
+            "sourceColumn": "CreatedDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "ConvertedDate",
+            "dataType": "dateTime",
+            "sourceColumn": "ConvertedDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBDate"
+          },
+          {
+            "name": "CloseDate",
+            "dataType": "dateTime",
+            "sourceColumn": "CloseDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBDate"
+          },
+          {
+            "name": "LastModifiedDate",
+            "dataType": "dateTime",
+            "sourceColumn": "LastModifiedDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "LastViewedDate",
+            "dataType": "dateTime",
+            "sourceColumn": "LastViewedDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "vw_Opportunity",
+            "dataView": "full",
+            "source": {
+              "query": " SELECT [ssas].[vw_Opportunity].* FROM [ssas].[vw_Opportunity] ",
+              "dataSource": "SqlServer"
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "OpportunityCt",
+            "expression": " CALCULATE( COUNTROWS('Opportunity'), 'Opportunity'[IsDeleted] = FALSE )"
+          },
+          {
+            "name": "ClosedWonCt",
+            "expression": " CALCULATE( COUNTROWS('Opportunity'), 'Opportunity'[IsDeleted] = FALSE, 'Opportunity'[StageName]=\"Closed Won\" )"
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [ssas].[vw_Opportunity].* FROM [ssas].[vw_Opportunity] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "vw_Opportunity"
           },
           {
             "name": "_TM_ExtProp_DbSchemaName",

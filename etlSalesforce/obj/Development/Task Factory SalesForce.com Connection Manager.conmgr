@@ -7,7 +7,7 @@
     <TaskFactorySalesForceConnectionManager
       ConnectionString="ProxyAuthorizationScheme=0;Username=praywood@manbearpig.com;ServerURL=;Timeout=60;UseProxy=False;ProxyHost=;ProxyUserName=;ProxyDomain=;ProxyPort=0;ReuseConnectionAcrossAllTasks=True;NumberOfRetries=0;">
       <Password
-        Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZvmDkZl/rUC7pQtWj26RKAAAAAACAAAAAAAQZgAAAAEAACAAAABIVPp7CIjWFNOn2GCZnOZt05gf72lpV6gwCGCy5JnbXgAAAAAOgAAAAAIAACAAAACUOo0zvb0UABi16v6/Jmg67mVWD3e/Ql072G7ip7t4OXAAAAD5FvpVTB9bh6F7k4Rh7a5dS9uMo3WSjex5TkVeNO+UyP9kG90LS4LMzihLYSsyIzSQt1K6GtK6vLpzF0tU0l206mZO49YwZTVyG1hglE89CLIHnjKUa94qFkT65SZWzbJfJrXSLDnfYyWIPRGHeF6NQAAAAD8uK44ys1BKXHLo/bdMAnuX6XOZveWWHYYLbfGXI4D5/Bh4mQZUSD+ZPghMA/dHnLbg50bxcP8VCNe5WKH+Ys8=</Password>
+        Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZvmDkZl/rUC7pQtWj26RKAAAAAACAAAAAAAQZgAAAAEAACAAAACmGBHG+jVQ/ytGe7bn8bobzJ+J0a9cUpYQlLU12QjsNgAAAAAOgAAAAAIAACAAAADPH/cc43lSOidD2Y+72NhN47frFwFmZxskC9Uv7vET8nAAAAAP96INXLTQIhj5YTJqi6SOtBNvGQTOE7+AawpxWFc8SIBXW3iMcTlIgtUxQaX4oWpCkdSRo6QqCi5f6N0gynwIuTcBMXob+T7PNZSVIPDTKN5V2w6WWV9ooO62J7BlVaVwxltuytvplvOSgiHmEGNTQAAAALe1HVw4gZGntANURiY8ErBQe1+jtk7/F1/16Uua/BhIB/K1vF4IVjMO2uYglINy0C4nvAecmTRpUeuAfWXplKg=</Password>
     </TaskFactorySalesForceConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>

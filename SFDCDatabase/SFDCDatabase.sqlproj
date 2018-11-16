@@ -76,6 +76,7 @@
     <Build Include="Scripts\sfo.User.sql" />
     <Build Include="Scripts\ssasvwLeads.sql" />
     <Build Include="Scripts\SSAS Schema.sql" />
+    <Build Include="Scripts\ssasvwOpportunity.sql" />
   </ItemGroup>
   <PropertyGroup>
     <PostBuildEvent>
