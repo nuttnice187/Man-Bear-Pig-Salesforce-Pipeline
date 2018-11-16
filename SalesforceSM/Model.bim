@@ -166,6 +166,108 @@
             "value": "ssas"
           }
         ]
+      },
+      {
+        "name": "vwDimCalendar",
+        "columns": [
+          {
+            "name": "Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Date",
+            "formatString": "General Date",
+            "sourceProviderType": "DBDate"
+          },
+          {
+            "name": "Month",
+            "dataType": "int64",
+            "sourceColumn": "Month",
+            "sourceProviderType": "UnsignedTinyInt"
+          },
+          {
+            "name": "Year",
+            "dataType": "int64",
+            "sourceColumn": "Year",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "WeekOfYear",
+            "dataType": "int64",
+            "sourceColumn": "WeekOfYear",
+            "sourceProviderType": "UnsignedTinyInt"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "vwDimCalendar",
+            "dataView": "full",
+            "source": {
+              "query": " SELECT [ssas].[vwDimCalendar].* FROM [ssas].[vwDimCalendar] ",
+              "dataSource": "SqlServer"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [ssas].[vwDimCalendar].* FROM [ssas].[vwDimCalendar] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "vwDimCalendar"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "ssas"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "b1a23b09-0301-4046-b540-dceb39d65393",
+        "fromTable": "Lead",
+        "fromColumn": "CreatedDate",
+        "toTable": "vwDimCalendar",
+        "toColumn": "Date"
+      },
+      {
+        "name": "84b1cc02-fc55-4692-a385-01cfde710a78",
+        "fromTable": "Opportunity",
+        "fromColumn": "CreatedDate",
+        "toTable": "vwDimCalendar",
+        "toColumn": "Date"
+      },
+      {
+        "name": "9e991b46-0c6d-4891-8f20-d8b2bf1197fe",
+        "fromTable": "Opportunity",
+        "fromColumn": "ConvertedDate",
+        "toTable": "vwDimCalendar",
+        "toColumn": "Date",
+        "isActive": false
+      },
+      {
+        "name": "9c92fb32-c577-4317-97b3-57cb3f002a29",
+        "fromTable": "Opportunity",
+        "fromColumn": "CloseDate",
+        "toTable": "vwDimCalendar",
+        "toColumn": "Date",
+        "isActive": false
+      },
+      {
+        "name": "9673ec05-f2e1-4ad1-81e1-93c6161570aa",
+        "fromTable": "Opportunity",
+        "fromColumn": "LastModifiedDate",
+        "toTable": "vwDimCalendar",
+        "toColumn": "Date",
+        "isActive": false
+      },
+      {
+        "name": "b087b18e-a747-435e-8123-8c8c91cad16b",
+        "fromTable": "Opportunity",
+        "fromColumn": "LastViewedDate",
+        "toTable": "vwDimCalendar",
+        "toColumn": "Date",
+        "isActive": false
       }
     ],
     "annotations": [

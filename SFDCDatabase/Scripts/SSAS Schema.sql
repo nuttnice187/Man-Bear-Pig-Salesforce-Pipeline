@@ -1,1 +1,1 @@
-﻿CREATE SCHEMA [ssas] 
+﻿CREATE SCHEMA [ssas]

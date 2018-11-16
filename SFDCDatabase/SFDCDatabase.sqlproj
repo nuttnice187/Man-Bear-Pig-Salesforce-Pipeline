@@ -70,13 +70,19 @@
     <Build Include="SalesforceObjects.sql" />
     <Build Include="Scripts\sfo.Product2.sql" />
     <Build Include="Scripts\sfo.Lead.sql" />
-    <Build Include="Scripts\Opportunity.sql" />
+    <Build Include="Scripts\sfo.Opportunity.sql" />
     <Build Include="Scripts\sfo.Case.sql" />
     <Build Include="Scripts\sfo.Contact.sql" />
     <Build Include="Scripts\sfo.User.sql" />
-    <Build Include="Scripts\ssasvwLeads.sql" />
+    <Build Include="Scripts\ssas.vwLeads.sql" />
     <Build Include="Scripts\SSAS Schema.sql" />
-    <Build Include="Scripts\ssasvwOpportunity.sql" />
+    <Build Include="Scripts\ssas.vwOpportunity.sql" />
+    <Build Include="Scripts\dbo.fnDateRange.sql" />
+    <Build Include="Scripts\dbo.fnGetEasterHolidays.sql" />
+    <Build Include="Scripts\dbo.DimCalendar.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\popdboDimCalendar.sql" />
   </ItemGroup>
   <PropertyGroup>
     <PostBuildEvent>

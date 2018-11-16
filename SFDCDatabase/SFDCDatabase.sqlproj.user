@@ -7,5 +7,6 @@
     <BlockOnPossibleDataLoss>True</BlockOnPossibleDataLoss>
     <TargetConnectionString>Data Source=DESKTOP-TD602CR\JABBOSA;Initial Catalog=master;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=True</TargetConnectionString>
     <TargetDatabase>master</TargetDatabase>
+    <DropObjectsNotInSource>False</DropObjectsNotInSource>
   </PropertyGroup>
 </Project>
